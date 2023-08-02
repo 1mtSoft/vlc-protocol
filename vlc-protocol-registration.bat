@@ -32,16 +32,16 @@ if exist "%vlc_dir:"=%\vlc-protocol.bat" (
   del /F /Q "%vlc_dir:"=%\vlc-protocol.bat"
 )
 
-if exist "%vlc_dir:"=%\bg.jpg" (
-  echo Deleting bg.jpg
-  del /F /Q "%vlc_dir:"=%\bg.jpg"
+if exist "%vlc_dir:"=%\bg_1920x1080.png" (
+  echo Deleting bg_1920x1080.png
+  del /F /Q "%vlc_dir:"=%\bg_1920x1080.png"
 )
 
 echo Copy vlc-protocol.bat to %vlc_dir%
 copy /Y "%~dp0vlc-protocol.bat" "%vlc_dir:"=%\vlc-protocol.bat"
 
-echo Copy bg.jpg to %vlc_dir%
-copy /Y "%~dp0bg.jpg" "%vlc_dir:"=%\bg.jpg"
+echo Copy bg_1920x1080.png to %vlc_dir%
+copy /Y "%~dp0bg_1920x1080.png" "%vlc_dir:"=%\bg_1920x1080.png"
 
 echo Associating vlc:// with vlc-protocol.bat.
 reg add HKCR\vlc /ve /t REG_SZ /d "URL:vlc Protocol" /f
