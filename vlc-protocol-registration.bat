@@ -32,16 +32,48 @@ if exist "%vlc_dir:"=%\vlc-protocol.bat" (
   del /F /Q "%vlc_dir:"=%\vlc-protocol.bat"
 )
 
-if exist "%vlc_dir:"=%\bg_1920x1080.png" (
-  echo Deleting bg_1920x1080.png
-  del /F /Q "%vlc_dir:"=%\bg_1920x1080.png"
+if exist "%vlc_dir:"=%\bg_1x1_1920x1080.png" (
+  echo Deleting bg_1x1_1920x1080.png
+  del /F /Q "%vlc_dir:"=%\bg_1x1_1920x1080.png"
+)
+
+if exist "%vlc_dir:"=%\bg_2x1_1920x1080.png" (
+  echo Deleting bg_2x1_1920x1080.png
+  del /F /Q "%vlc_dir:"=%\bg_2x1_1920x1080.png"
+)
+
+if exist "%vlc_dir:"=%\bg_2x2_1920x1080.png" (
+  echo Deleting bg_2x2_1920x1080.png
+  del /F /Q "%vlc_dir:"=%\bg_2x2_1920x1080.png"
+)
+
+if exist "%vlc_dir:"=%\bg_3x2_1920x1080.png" (
+  echo Deleting bg_3x2_1920x1080.png
+  del /F /Q "%vlc_dir:"=%\bg_3x2_1920x1080.png"
+)
+
+if exist "%vlc_dir:"=%\bg_3x3_1920x1080.png" (
+  echo Deleting bg_3x3_1920x1080.png
+  del /F /Q "%vlc_dir:"=%\bg_3x3_1920x1080.png"
 )
 
 echo Copy vlc-protocol.bat to %vlc_dir%
 copy /Y "%~dp0vlc-protocol.bat" "%vlc_dir:"=%\vlc-protocol.bat"
 
-echo Copy bg_1920x1080.png to %vlc_dir%
-copy /Y "%~dp0bg_1920x1080.png" "%vlc_dir:"=%\bg_1920x1080.png"
+echo Copy bg_1x1_1920x1080.png to %vlc_dir%
+copy /Y "%~dp0bg_1x1_1920x1080.png" "%vlc_dir:"=%\bg_1x1_1920x1080.png"
+
+echo Copy bg_2x1_1920x1080.png to %vlc_dir%
+copy /Y "%~dp0bg_2x1_1920x1080.png" "%vlc_dir:"=%\bg_2x1_1920x1080.png"
+
+echo Copy bg_2x2_1920x1080.png to %vlc_dir%
+copy /Y "%~dp0bg_2x2_1920x1080.png" "%vlc_dir:"=%\bg_2x2_1920x1080.png"
+
+echo Copy bg_3x2_1920x1080.png to %vlc_dir%
+copy /Y "%~dp0bg_3x2_1920x1080.png" "%vlc_dir:"=%\bg_3x2_1920x1080.png"
+
+echo Copy bg_3x3_1920x1080.png to %vlc_dir%
+copy /Y "%~dp0bg_3x3_1920x1080.png" "%vlc_dir:"=%\bg_3x3_1920x1080.png"
 
 echo Associating vlc:// with vlc-protocol.bat.
 reg add HKCR\vlc /ve /t REG_SZ /d "URL:vlc Protocol" /f
