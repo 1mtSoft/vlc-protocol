@@ -1,12 +1,13 @@
 ### Настройка поддержки открытия протоколов(vlc://, vlm://) из браузера в VLC плеере
 
 #### Шаг 1: Установка VLC плеера
-- `https://www.videolan.org/vlc/`
+- `https://www.videolan.org/vlc/
 
 #### Шаг 2: Скачайте и распакуйте архив по этой ссылке
 - `https://github.com/1mtSoft/vlc-protocol/archive/refs/heads/main.zip`
 
-#### Шаг 3: Запустите `от имени администратора` файл из распакованного архива с названием
-- `vlc-protocol-registration.bat`
+#### Для Windows
+- [./Windows/README.md](./Windows/README.md)
 
-#### Шаг 4: Проверьте открытие камер в ЛК 1МТ
+#### Для MacOS
+- [./MacOS/README.md](./MacOS/README.md)
