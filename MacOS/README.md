@@ -1,5 +1,5 @@
 #### Шаг 1: Распаковыаем архив с названием
-- `MacOS/vlc-protocol-vlm.app.zip`
+- `MacOS/vlc-protocol-vlm.zip`
 
 #### Шаг 2: Копируем файл `vlc-protocol-vlm.app` в раздел `Программы`
 
