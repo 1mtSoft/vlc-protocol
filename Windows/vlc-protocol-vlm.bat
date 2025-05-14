@@ -1,7 +1,7 @@
 @echo off
 Setlocal EnableDelayedExpansion
 set url_full=%~1
-set url=%url_full:~6%
+set url=%url_full:~4%
 set file_name=%~nx1
 set file=%tmp%\%file_name%
 
